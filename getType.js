@@ -13,6 +13,6 @@ function getType(url){
     values.includes(v) ? type = c : null
   });
 }
-extensions.forEach(getKey)
+extensions ? extensions.forEach(getKey) : null;
   return type
 }
